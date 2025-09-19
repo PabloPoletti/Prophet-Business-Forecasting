@@ -41,19 +41,20 @@ except ImportError as e:
     print(f"Warning: Prophet not installed: {e}")
     print("Install with: pip install prophet")
 
-# NeuralProphet imports
-NEURALPROPHET_AVAILABLE = False
+# Prophet and NeuralProphet imports - REQUIRED for this analysis
 try:
     from neuralprophet import NeuralProphet, set_log_level
     set_log_level("ERROR")  # Reduce logging
     import neuralprophet
-    NEURALPROPHET_AVAILABLE = True
 except ImportError as e:
-    print(f"Warning: NeuralProphet not installed: {e}")
-    print("Install with: pip install neuralprophet")
-    # Create dummy class
-    class NeuralProphet:
-        pass
+    print("❌ CRITICAL ERROR: Prophet libraries not installed!")
+    print(f"Missing: {e}")
+    print("\n🔧 INSTALLATION REQUIRED:")
+    print("pip install prophet")
+    print("pip install neuralprophet")
+    print("\n📖 This project specifically demonstrates Prophet and NeuralProphet business forecasting capabilities.")
+    print("Without these libraries, the analysis cannot proceed.")
+    exit(1)
 
 warnings.filterwarnings('ignore')
 

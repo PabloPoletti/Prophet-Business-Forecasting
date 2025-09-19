@@ -1,21 +1,19 @@
-# Prophet Business Forecasting - Professional Time Series Analysis
-# Core requirements (basic analysis without Prophet)
+# Prophet Business Forecasting - REQUIRED LIBRARIES
+# This project specifically demonstrates Prophet and NeuralProphet capabilities
+
+# Core Prophet libraries - REQUIRED
+prophet>=1.1.0
+neuralprophet>=0.6.0
+cmdstanpy>=1.2.5
+
+# Supporting libraries
 pandas>=2.2.0
 numpy>=1.26.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
 plotly>=5.24.0
 yfinance>=0.2.32
+optuna>=3.6.1
 scikit-learn>=1.5.0
 scipy>=1.14.0
-optuna>=3.6.0
-requests>=2.31.0
-tqdm>=4.66.0
 
-# Optional Prophet requirements (install manually if needed)
-# For full Prophet functionality, install:
-# pip install prophet neuralprophet
-#
-# prophet>=1.1.0
-# neuralprophet>=0.6.0
-# cmdstanpy>=1.2.0
+# Note: This project requires Prophet and NeuralProphet to function properly.
+# Without these libraries, the business forecasting analysis cannot proceed.
