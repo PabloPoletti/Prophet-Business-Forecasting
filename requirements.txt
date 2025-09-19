@@ -1,44 +1,21 @@
-# Prophet Business Forecasting - Professional Time Series Project 2025
-# Core Prophet framework
-prophet>=1.1.4
-cmdstanpy>=1.2.0
-
-# Dashboard and visualization
-streamlit>=1.39.0
-plotly>=5.24.0
+# Prophet Business Forecasting - Professional Time Series Analysis
+# Core requirements (basic analysis without Prophet)
 pandas>=2.2.0
 numpy>=1.26.0
-
-# Holiday effects and external regressors
-holidays>=0.34
-convertdate>=2.4.0
-
-# Advanced optimization
-optuna>=3.6.0
-hyperopt>=0.2.7
-scikit-learn>=1.5.0
-
-# Bayesian optimization
-bayesian-optimization>=1.4.3
-skopt>=0.9.0
-
-# Statistical analysis
-scipy>=1.14.0
-statsmodels>=0.14.0
-
-# Cross-validation
-sklearn>=1.5.0
-mlxtend>=0.23.0
-
-# Data processing
-pystan>=3.7.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
 plotly>=5.24.0
-seaborn>=0.13.0
-
-# Business analytics
-fbprophet>=0.7.1
-neuralprophet>=0.7.0
-
-# Utilities
+yfinance>=0.2.32
+scikit-learn>=1.5.0
+scipy>=1.14.0
+optuna>=3.6.0
+requests>=2.31.0
 tqdm>=4.66.0
-python-dotenv>=1.0.0
+
+# Optional Prophet requirements (install manually if needed)
+# For full Prophet functionality, install:
+# pip install prophet neuralprophet
+#
+# prophet>=1.1.0
+# neuralprophet>=0.6.0
+# cmdstanpy>=1.2.0

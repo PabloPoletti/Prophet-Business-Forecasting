@@ -42,13 +42,18 @@ except ImportError as e:
     print("Install with: pip install prophet")
 
 # NeuralProphet imports
+NEURALPROPHET_AVAILABLE = False
 try:
     from neuralprophet import NeuralProphet, set_log_level
     set_log_level("ERROR")  # Reduce logging
     import neuralprophet
+    NEURALPROPHET_AVAILABLE = True
 except ImportError as e:
     print(f"Warning: NeuralProphet not installed: {e}")
     print("Install with: pip install neuralprophet")
+    # Create dummy class
+    class NeuralProphet:
+        pass
 
 warnings.filterwarnings('ignore')
 
