@@ -26,10 +26,19 @@ Professional business-focused time series forecasting using Meta's Prophet and N
 
 ## 🛠️ Installation & Usage
 
-### Prerequisites
+### ⚠️ Required Libraries
+**This project specifically requires Prophet and NeuralProphet to function properly:**
+
 ```bash
+# Core Prophet libraries - REQUIRED
+pip install prophet
+pip install neuralprophet
+
+# Or install all requirements
 pip install -r requirements.txt
 ```
+
+**Note:** Without these libraries, the business forecasting analysis cannot proceed. The project will exit with clear installation instructions if dependencies are missing.
 
 ### Run Analysis
 ```bash
